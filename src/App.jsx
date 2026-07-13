@@ -13,13 +13,13 @@ export default function App() {
       icono: '📐',
       imagen: 'imagenes/Profesor enseñando a niños pequeños un cuaderno.jpg' // P mayúscula
     },
-    { 
-      id: 2, 
-      titulo: 'Ciencia, Tecnología y Ambiente', 
-      lecciones: 8, 
-      icono: '🌱',
-      imagen: 'imagenes/Niños en un patio del colegio jugando.jpg' // N mayúscula y extensión .jpg real
-    },
+  { 
+    id: 2, 
+    titulo: 'Ciencia, Tecnología y Ambiente', 
+    lecciones: 8, 
+    icono: '🌱',
+    imagen: 'imagenes/Niños en un patio del colegio jugando.jpg' // <-- Asegúrate de que tenga la "N" mayúscula y termine en .jpg
+  },
     { 
       id: 3, 
       titulo: 'Comunicación y Lenguas Originarias', 
