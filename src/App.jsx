@@ -4,40 +4,40 @@ export default function App() {
   const [seccionActiva, setSeccionActiva] = useState('cursos');
   const [busqueda, setBusqueda] = useState('');
 
-  // 1. Cursos locales con rutas relativas corregidas (sin la barra '/' inicial)
+  // 1. Cursos locales alineados perfectamente con los nombres reales en Git
   const [cursosLocales, setCursosLocales] = useState([
     { 
       id: 1, 
       titulo: 'Matemáticas e Interculturalidad', 
       lecciones: 12, 
       icono: '📐',
-      imagen: 'imagenes/Profesor enseñando a niños pequeños un cuaderno.jpg'
+      imagen: 'imagenes/Profesor enseñando a niños pequeños un cuaderno.jpg' // P mayúscula
     },
     { 
       id: 2, 
       titulo: 'Ciencia, Tecnología y Ambiente', 
       lecciones: 8, 
       icono: '🌱',
-      imagen: 'imagenes/niños en un patio del colegio jugando.png' 
+      imagen: 'imagenes/Niños en un patio del colegio jugando.jpg' // N mayúscula y extensión .jpg real
     },
     { 
       id: 3, 
       titulo: 'Comunicación y Lenguas Originarias', 
       lecciones: 15, 
       icono: '🗣️',
-      imagen: 'imagenes/Niños con sus trajes tipicos leyendo su cuaderno.jpg' 
+      imagen: 'imagenes/Niños con sus trajes tipicos leyendo su cuaderno.jpg' // N mayúscula
     },
   ]);
 
-  // 2. Pasos de instalación con rutas relativas corregidas
+  // 2. Pasos de instalación con mayúsculas, minúsculas y nombres idénticos a tu terminal
   const pasosInstalacion = [
-    { titulo: '1. Soportes Estructurales', descripcion: 'Estructura de aluminio fijada mecánicamente orientada al sol.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/Soprtes para los modulos fotovoltaicos.png' },
-    { titulo: '2. Montaje de Paneles Solares', descripcion: 'Fijación de los módulos fotovoltaicos sobre los rieles.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/Instalacion de paneles solares.png' },
-    { titulo: '3. Banco de Almacenamiento', descripcion: 'Conexión de baterías de ciclo profundo en gabinete técnico seguro.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/baterias en cuarto de almacenamiento.png' },
-    { titulo: '4. Acciones y Cuidados', descripcion: 'Mantenimiento diario contra el polvo y sombras parciales.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/acciones para cuidar el panel solar.png' },
-    { titulo: '5. Monitoreo del Docente', descripcion: 'Capacitación básica al profesor encargado para la supervisión.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/Profesor junto a un panel solar.png' },
-    { titulo: '6. Anclaje de Antena Satelital', descripcion: 'Instalación del plato y calibración de azimut hacia el satélite.', tipo: 'red', color: 'border-sky-500 bg-sky-50/40', imagen: 'imagenes/instalacion de antena digital.jpg' },
-    { titulo: '7. Conexiones de Distribución', descripcion: 'Enrutado de cable coaxial y ethernet blindado al servidor local.', tipo: 'red', color: 'border-sky-500 bg-sky-50/40', imagen: 'imagenes/Conexiones de la antena digital.png' }
+    { titulo: '1. Soportes Estructurales', descripcion: 'Estructura de aluminio fijada mecánicamente orientada al sol.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/Soprtes para los modulos fotovoltaicos.png' }, // Nombre exacto de tu archivo "Soprtes"
+    { titulo: '2. Montaje de Paneles Solares', descripcion: 'Fijación de los módulos fotovoltaicos sobre los rieles.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/Instalacion de paneles solares.png' }, // I mayúscula
+    { titulo: '3. Banco de Almacenamiento', descripcion: 'Conexión de baterías de ciclo profundo en gabinete técnico seguro.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/baterias en cuarto de almacenamiento.png' }, // Todo minúscula
+    { titulo: '4. Acciones y Cuidados', descripcion: 'Mantenimiento diario contra el polvo y sombras parciales.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/acciones para cuidar el panel solar.png' }, // Todo minúscula
+    { titulo: '5. Monitoreo del Docente', descripcion: 'Capacitación básica al profesor encargado para la supervisión.', tipo: 'energia', color: 'border-amber-500 bg-amber-50/40', imagen: 'imagenes/Profesor junto a un panel solar.png' }, // P mayúscula
+    { titulo: '6. Anclaje de Antena Satelital', descripcion: 'Instalación del plato y calibración de azimut hacia el satélite.', tipo: 'red', color: 'border-sky-500 bg-sky-50/40', imagen: 'imagenes/instalacion de antena digital.jpg' }, // Todo minúscula
+    { titulo: '7. Conexiones de Distribución', descripcion: 'Enrutado de cable coaxial y ethernet blindado al servidor local.', tipo: 'red', color: 'border-sky-500 bg-sky-50/40', imagen: 'imagenes/Conexiones de la antena digital.png' } // C mayúscula
   ];
 
   // Filtrado lógico por buscador
@@ -96,7 +96,7 @@ export default function App() {
         {/* ÁREA DE CONTENIDO */}
         <main className="flex-1 p-8 overflow-y-auto">
           
-          {/* SECCIÓN CURSOS CON FOTOS EDUCATIVAS */}
+          {/* SECCIÓN CURSOS */}
           {seccionActiva === 'cursos' && (
             <div className="space-y-6">
               <p className="text-sm text-slate-500 max-w-2xl -mt-2">Biblioteca digital del aula conectada localmente sin internet.</p>
@@ -128,7 +128,7 @@ export default function App() {
             </div>
           )}
 
-          {/* SECCIÓN VIDEOS CON EL DOCENTE DICTANDO CLASE */}
+          {/* SECCIÓN VIDEOS */}
           {seccionActiva === 'videos' && (
             <div className="max-w-3xl bg-white rounded-xl shadow-sm border border-slate-200 p-5">
               <div className="aspect-video bg-slate-900 rounded-lg flex items-center justify-center text-white mb-4 shadow-inner relative overflow-hidden group">
@@ -169,12 +169,12 @@ export default function App() {
             </div>
           )}
 
-          {/* SECCIÓN DOCENTE CON BANNER BIENVENIDA */}
+          {/* SECCIÓN DOCENTE */}
           {seccionActiva === 'docente' && (
             <div className="max-w-2xl space-y-6">
               <div className="w-full h-44 rounded-xl overflow-hidden relative bg-slate-900 shadow-sm border border-slate-200 flex items-end p-5">
                 <img 
-                  src="imagenes/Niños pequeños juntos al frente de sus escuela.jpg" 
+                  src="imagenes/Niños pequeños juntos al frente de su escuela.jpg" // N mayúscula y "su escuela" exacto
                   alt="Niños frente a escuela" 
                   className="absolute inset-0 w-full h-full object-cover opacity-50"
                   onError={(e) => { e.target.style.display = 'none'; }}
